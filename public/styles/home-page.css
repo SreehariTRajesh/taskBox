@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: inline-flex;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    max-width: 100%;
+}
+.title{
+    flex: 10;
+}
+.log-in,.sign-up{
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+.title p{
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 1%;
+    top: 20%;
+}
+.log-in{
+    background-color: white;
+    text-align:center;
+    vertical-align: middle;
+    height: 30px;
+}
+.log-in:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.log-in:hover a{
+    color: white;
+}
+.sign-up{
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+}
+.sign-up:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.sign-up:hover a{
+    color: white;
+}
+.log-in a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.sign-up a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.vector-box{
+    display: inline-flex;
+    max-width: 100%;
+    width: 100%;
+}
+.services{
+    flex: 1;
+}
+.services img{
+    float: left;
+}
+.intro{
+    flex: 1;
+}
+.intro p{
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+.new-ideas{
+    flex: 1;
+}
+.new-ideas img{
+    float: right;
+}
+.desc{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.desc p{
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+.function-title{
+    margin-top: 30px;
+    margin-bottom:30px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+}
+.functions{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+}
+.assign-tasks{
+    flex: 1;
+    width: 60%;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius:30px;
+    display: inline-flex;
+}
+.assign-tasks p{
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    flex: 8;
+}
+.assign-tasks .bullet{
+    flex: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    position: relative;
+    top: 20%;
+    margin-right: 10%;
+}
+.assign-tasks .bullet p{
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+.assign-tasks:hover .bullet{
+    background-color:#6633ff;
+}
+.official-mails{
+    flex: 1;
+    width: 60%;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    display: inline-flex;
+}
+.official-mails p{
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    flex: 8;
+}
+.official-mails .bullet{
+    flex: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    position: relative;
+    top: 20%;
+    margin-right: 10%;
+}
+
+.official-mails .bullet p{
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+.official-mails:hover .bullet{
+    background-color: #6633ff;
+}
+.easy{
+    flex: 1;
+    width: 60%;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    display: inline-flex;
+}
+.easy p{
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    flex: 8;
+}
+.easy .bullet{
+    flex: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: aquamarine;
+    position: relative;
+    top: 20%;    
+    margin-right: 10%;
+}
+
+.easy .bullet p{
+    text-align: center;
+    position: relative;
+    top: 8%;
+}
+.easy:hover .bullet{
+    background-color:#6633ff;
+}
+.user-login{
+    width: 100%;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+.login-btn{
+    position: relative;
+    left: 35%;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+}
+.login-btn a{
+    color: black;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 15%;
+}
+.login-btn:hover{
+    background-color:white;
+    border: 2px solid black;
+}
+.login-btn:hover a{
+    color: black;
+}
+.create-account{
+    width: 100%;
+    font-family: monospace;
+    font-size: 20px;  
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;  
+}
+.create-btn{
+    position: relative;
+    left: 35%;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+}
+.create-btn a{
+    color: black;
+    text-decoration: none;
+    color:white;
+    position: relative;
+    top: 15%;
+}
+.create-btn:hover{
+    background-color:white;
+    border: 2px solid black;
+}
+.create-btn:hover a{
+    color: black;
+}
+.desc{
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+.desc p{
+    position: relative;
+    top: -10%;
+}
+.social-networks{
+    display: inline-flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.desc{
+    flex: 32;
+    color: white;
+}
+
+.desc p{
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+.facebook{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.facebook img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.instagram{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.instagram img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.linkedin{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.linkedin img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.twitter{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.twitter img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.footer-content{
+    display: inline-flex;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.web-tag{
+    flex: 1.5;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.web-tag p{
+    color: deeppink;
+}
+.contact-us{
+    flex: 1;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.privacy-policy{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.term-condns{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-us{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.privacy-policy a{
+    text-decoration: none;
+    color: black;
+}
+.term-condns a{
+    text-decoration: none;
+    color: black;
+}
+.about-us a{
+    text-decoration: none;
+    color: black;
+}

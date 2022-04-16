@@ -1,0 +1,72 @@
+doctype html
+html
+    title #{name}'s DashBoard
+    link(href='/styles/view-task.css' rel='stylesheet')
+    body
+        div.navbar
+            div.logo
+                p taskBox
+            div.dashboard
+                a(href=`/${id}/dashboard`) Dashboard
+            div.add-task
+                a(href=`/${id}/add-task`) Add Tasks
+            div.view-task    
+                a(href=`/${id}/view-task`) View Tasks 
+            div.user-options
+                img(src='/images/user.png' height='35px' width='35px' alt='Image cannot be displayed')
+                div.drop-list
+                    div.view-profile
+                        a(href=`/${id}/view-profile`) View Profile
+                    div.logout
+                        a(href= '/') Logout
+                    div.privacy-policy
+                        a(href=`/privacy-policy`) Privacy Policy
+                    div.about-us
+                        a(href=`/about-us`) About Us
+        div.page-content
+            block content
+                each task,index in tasks
+                    div.task-block
+                        div.t-desc
+                            p #{task.taskDescription}
+                        div.t-deadline
+                            p To be completed by:#{task.deadline}
+                        div.t-timer
+                            p(id=`timer${index}`)
+        div.footer
+            div.social-networks
+                div.desc 
+                    p Connect with us via...
+                div.facebook
+                    a(href='#route1')
+                        img(src='/images/facebook.png' height='30' width='30')
+                div.instagram
+                    a(href='#route2')
+                        img(src='/images/instagram.png' height='30' width='30')
+                div.linkedin
+                    a(href='#route3')
+                        img(src='/images/linkedin.png' height='30' width='30')
+                div.twitter
+                    a(href='#route4')
+                        img(src='/images/twitter.png' height='30' width='30')
+            div.footer-content
+                div.web-tag
+                    p Additional Links
+                    div.privacy-policyf
+                        a(href='/privacy-policy') Privacy Policy
+                    div.term-condnsf
+                        a(href='/terms-and-condns') Terms and Conditions
+                    div.about-usf
+                        a(href='/about-us') About Us
+                div.contact-us
+                    p Contact Us
+                    br
+                    div.details
+                        p Mail:taskBoxOfficial@gmail.com
+                        br
+                        p Phone:+1 7218348478,7384189889
+                        br
+                        p Address Parkinsons Avenue, NewYork,USA
+        
+    script var my_tasks=!{JSON.stringify(tasks)}
+    script(src='/scripts/indexTimer.js')

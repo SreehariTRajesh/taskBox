@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: inline-flex;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    max-width: 100%;
+}
+.title{
+    flex: 10;
+}
+.log-in,.sign-up{
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+.title p{
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 1%;
+    top: 20%;
+}
+.log-in{
+    background-color: white;
+    text-align:center;
+    vertical-align: middle;
+    height: 30px;
+}
+.log-in:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.log-in:hover a{
+    color: white;
+}
+.sign-up{
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+}
+.sign-up:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.sign-up:hover a{
+    color: white;
+}
+.log-in a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.sign-up a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.form{
+    background-image: linear-gradient(to right,#6600ff,#9900ff,#cc00ff);
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+.form form{
+    position: relative;
+    left: 10%;
+}
+.register-title{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top: 50px;
+    height: 40px;
+    background-color: black;
+    border-radius: 15px 15px 0px 0px;
+}
+.register-title p{
+    font-family: monospace;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 6px;
+}
+.user-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: monospace;
+}
+.user-name label{
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.user-name input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+.email{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: monospace;
+}
+.email label{
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.email input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: monospace;
+}
+.name label{
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.name input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+.phone-no{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: monospace;
+}
+.phone-no label{
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.phone-no input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+.password{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: monospace;
+}
+.password label{
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.password input{
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+.submit{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: monospace;
+}
+.submit input{
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+}
+.footer{
+    margin-top: 100px;
+}
+.social-networks{
+    display: inline-flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.desc{
+    flex: 32;
+    color: white;
+    font-size: 18px;
+    font-family: monospace
+}
+.desc p{
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+.facebook{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.facebook img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.instagram{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.instagram img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.linkedin{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.linkedin img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.twitter{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.twitter img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.footer-content{
+    display: inline-flex;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.web-tag{
+    flex: 1.5;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.web-tag p{
+    color: deeppink;
+}
+.contact-us{
+    flex: 1;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.privacy-policy{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.term-condns{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-us{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.privacy-policy a{
+    text-decoration: none;
+    color: black;
+}
+.term-condns a{
+    text-decoration: none;
+    color: black;
+}
+.about-us a{
+    text-decoration: none;
+    color: black;
+}

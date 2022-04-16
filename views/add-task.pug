@@ -1,0 +1,42 @@
+doctype html
+html
+    title #{user}'s DashBoard
+    link(href='/styles/add-task.css' rel='stylesheet')
+    body
+        div.navbar
+            div.logo
+                p taskBox
+            div.dashboard
+                a(href=`/${id}/dashboard`) Dashboard
+            div.add-task
+                a(href=`/${id}/add-task`) Add Tasks
+            div.view-task    
+                a(href=`/${id}/view-task`) View Tasks 
+            div.user-options
+                img(src='/images/user.png' height='35px' width='35px' alt='Image cannot be displayed')
+                div.drop-list
+                    div.view-profile
+                        a(href=`/${id}/view-profile`) View Profile
+                    div.logout
+                        a(href='/') Logout
+                    div.privacy-policy
+                        a(href=`/${id}/privacy-policy`) Privacy Policy
+                    div.about-us
+                        a(href=`/${id}/about-us`) About Us
+        div.task-form
+            div.form-title
+                p Add your task here...
+            div.form-body
+                form(method='POST' action=`/${id}/add-task`)
+                    div.task-desc
+                        label(for='description') Describe your task
+                        br
+                        br
+                        input(type='text' id='description' name='description')
+                    div.time-deadline
+                        label(for='deadline') Enter the deadline for task submission
+                        br
+                        br
+                        input(type='datetime-local' id='deadline' name='deadline')
+                    div.submit
+                        input(type='submit')

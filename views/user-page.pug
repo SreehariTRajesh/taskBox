@@ -1,0 +1,95 @@
+doctype html
+html
+    title #{name}'s DashBoard
+    link(href='/styles/user-page.css' rel='stylesheet')
+    body
+        div.navbar
+            div.logo
+                p taskBox
+            div.dashboard
+                a(href=`/${id}/dashboard`) Dashboard
+            div.add-task
+                a(href=`/${id}/add-task`) Add Tasks
+            div.view-task    
+                a(href=`/${id}/view-task`) View Tasks 
+            div.user-options
+                img(src='/images/user.png' height='35px' width='35px' alt='Image cannot be displayed')
+                div.drop-list
+                    div.view-profile
+                        a(href=`/${id}/view-profile`) View Profile
+                    div.logout
+                        a(href= '/') Logout
+                    div.privacy-policy
+                        a(href=`/${id}/privacy-policy`) Privacy Policy
+                    div.about-us
+                        a(href=`/${id}/about-us`) About Us
+        div.menu
+            div.title
+                p Welcome to #{name}'s Dashboard
+            div.redirect
+                div.task-add
+                    p Assign a new task 📖
+                    div.btn
+                        a(href=`/${id}/add-task`) ➜
+                div.task-view
+                    p View my Tasks 📖
+                    div.btn
+                        a(href=`/${id}/view-task`) ➜
+                div.task-completed
+                    p View Completed-Tasks 📖
+                    div.btn
+                        a(href=`/${id}/completed-tasks`) ➜
+        div.top-tasks
+            div.task
+                -var x=tasks.length
+                if x
+                    div.task-desc
+                        p #{tasks[0].taskDescription}
+                    div.task-deadline
+                        p To be completed by #{tasks[0].deadline}
+                    div.timer
+                        p(id='timer')
+                else
+                    div.task-desc
+                        p No tasks due...
+            div.svg-container
+                img(src='/images/undraw_completed_steps_re_h9wc.svg' height='322' width='466')
+        div.footer
+            div.social-networks
+                div.desc 
+                    p Connect with us via...
+                div.facebook
+                    a(href='#route1')
+                        img(src='/images/facebook.png' height='30' width='30')
+                div.instagram
+                    a(href='#route2')
+                        img(src='/images/instagram.png' height='30' width='30')
+                div.linkedin
+                    a(href='#route3')
+                        img(src='/images/linkedin.png' height='30' width='30')
+                div.twitter
+                    a(href='#route4')
+                        img(src='/images/twitter.png' height='30' width='30')
+            div.footer-content
+                div.web-tag
+                    p Additional Links
+                    div.privacy-policyf
+                        a(href='/privacy-policy') Privacy Policy
+                    div.term-condnsf
+                        a(href='/terms-and-condns') Terms and Conditions
+                    div.about-usf
+                        a(href='/about-us') About Us
+                div.contact-us
+                    p Contact Us
+                    br
+                    div.details
+                        p Mail:taskBoxOfficial@gmail.com
+                        br
+                        p Phone:+1 7218348478,7384189889
+                        br
+                        p Address Parkinsons Avenue, NewYork,US
+
+-var x=tasks.length
+if x
+    script var date=!{JSON.stringify(tasks[0].deadline)}
+    script(src='/scripts/timer.js')

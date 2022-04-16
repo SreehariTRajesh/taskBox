@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: inline-flex;
+    height: 40px;
+    background-color:#202020;
+    max-width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.dashboard{
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+.dashboard a{
+    text-decoration: none;
+    color: white;
+}
+.dashboard:hover{
+    background-color: white;
+}
+.dashboard:hover a{
+    color: black;
+}
+.logo{
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    flex: 2;
+}
+.logo p{
+    text-decoration: none;
+    color: white;
+}
+.add-task{
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+.add-task a{
+    text-decoration: none;
+    color: white;
+}
+
+.add-task:hover{
+    background-color: white;
+}
+.add-task:hover a{
+    color: black;
+}
+.view-task{
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+.view-task a{
+    text-decoration: none;
+    color: white;
+}
+.view-task:hover{
+    background-color: white;
+}
+.view-task:hover a{
+    color: black;
+}
+.completed-tasks{
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+
+.completed-tasks a{
+    text-decoration: none;
+    color: white;
+}
+
+.completed-tasks:hover{
+    background-color: white;
+}
+.completed-tasks:hover a{
+    color: black;
+}
+.user-options{
+    text-align: center;
+    flex: 1;
+}
+.user-options img{
+    border-radius: 17.5px;
+}
+.user-options:hover .drop-list{
+    display: block;
+}
+.drop-list{
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    display: none;
+    float: right;
+    position: relative;
+    top:-2px;
+    left: -10px;
+    flex-direction: column;
+}
+.drop-list:hover .drop-list{
+    display: block;
+}
+.view-profile{
+    flex: 1;
+    border-radius: 5px 5px 0px 0px;
+}
+.view-profile a{
+    text-decoration: none;
+    font-family: monospace;
+    position: relative;
+    color: black;
+    left: 5%;
+}
+.view-profile:hover{
+    background-color:black;
+}
+.view-profile:hover a{
+    color: white;
+}
+.logout{
+    flex: 1;
+}
+.logout a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    position: relative;
+    left: 5%;
+}
+
+.logout:hover{
+    background-color:black;
+}
+.logout:hover a{
+    color: white;
+}
+.privacy-policy{
+    flex: 1;
+}
+.privacy-policy a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    position: relative;
+    left: 5%;
+}
+
+.privacy-policy:hover{
+    background-color:black;
+}
+.privacy-policy:hover a{
+    color: white;
+}
+.about-us{
+    flex: 1;
+    border-radius: 0px 0px 5px 5px;
+}
+.about-us a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    position: relative;
+    left: 5%;
+}
+
+.about-us:hover{
+    background-color:black;
+}
+.about-us:hover a{
+    color: white;
+}
+.task-form{
+    position: relative;
+    top: 20px;
+    left: 30%;
+    width: 40%;
+}
+.form-title{
+    border-radius: 10px 10px 0px 0px;
+    background-color: black;
+    height: 30px;
+}
+.form-title p{
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    color: white;
+}
+.form-body{
+    background-image: linear-gradient(to right,#6600ff,#9900ff,#cc00ff);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+.task-desc{
+    position: relative;
+    left: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.task-desc label{
+    background-color: black;
+    font-family: monospace;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    color: white;
+}
+
+.task-desc input{
+    width: 40%;
+    height: 30px;
+}
+.time-deadline{
+    position: relative;
+    left: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.time-deadline label{
+    background-color: black;
+    font-family: monospace;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    color: white;
+}
+.time-deadline input{
+    width: 40%;
+    height: 30px;
+}
+.submit{
+    position: relative;
+    left: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.submit input{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 15px;
+}

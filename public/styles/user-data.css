@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: inline-flex;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    max-width: 100%;
+}
+.title{
+    flex: 10;
+}
+.log-in,.sign-up{
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+.title p{
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 1%;
+    top: 20%;
+}
+.log-in{
+    background-color: white;
+    text-align:center;
+    vertical-align: middle;
+    height: 30px;
+}
+.log-in:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.log-in:hover a{
+    color: white;
+}
+.sign-up{
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+}
+.sign-up:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.sign-up:hover a{
+    color: white;
+}
+.log-in a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.sign-up a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.main-title{
+    max-width: 100%;
+    width: 100%;
+    height: 60px;
+    display: inline-flex;
+    font-family: monospace;
+    font-size: 18px;
+    background-color: #202020;
+}
+.name,.username,.email,.phoneno,.date{
+    text-align: center;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    top: 25%;
+    flex: 1;
+}
+.name p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:white;
+    border-radius: 7.5px;
+    color: black;
+}
+
+.username p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:white;
+    border-radius: 7.5px;
+    color: black;
+}
+
+.email p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:white;
+    border-radius: 7.5px;
+    color: black;
+}
+
+.phoneno p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:white;
+    border-radius: 7.5px;
+    color: black;
+}
+
+.date p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:white;
+    border-radius: 7.5px;
+    color: black;
+}
+.user-box{
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: inline-flex;
+    background-image: linear-gradient(to right,#ff33ff,#9900ff);
+}
+.myname,.myusername,.myemail,.myphoneno,.mydate{
+    flex: 1;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: center;
+}
+.myname p{
+    position: relative;
+    top: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.myusername p{
+    position: relative;
+    top: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.myemail p{
+    position: relative;
+    top: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.myphoneno p{
+    position: relative;
+    top: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.mydate p{
+    position: relative;
+    top: 20%;
+    font-size: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.footer{
+    margin-top: 100px;
+}
+.social-networks{
+    display: inline-flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.desc{
+    flex: 30;
+    color: white;
+    font-size: 18px;
+    font-family: monospace
+}
+.desc p{
+    width:60%;
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+.facebook{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.facebook img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.instagram{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.instagram img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.linkedin{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.linkedin img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.twitter{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.twitter img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.footer-content{
+    display: inline-flex;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.web-tag{
+    flex: 1.5;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.web-tag p{
+    color: deeppink;
+}
+.contact-us{
+    flex: 1;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.privacy-policy{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.term-condns{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-us{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.privacy-policy a{
+    text-decoration: none;
+    color: black;
+}
+.term-condns a{
+    text-decoration: none;
+    color: black;
+}
+.about-us a{
+    text-decoration: none;
+    color: black;
+}

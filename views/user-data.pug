@@ -1,0 +1,72 @@
+doctype html
+html
+    title TaskBox
+    link(href='./styles/user-data.css' rel='stylesheet')
+    body        
+        div.navbar
+            div.title
+                p taskBox
+            div.log-in
+                a(href='/login') Login
+            div.sign-up
+                a(href='/sign-up') Sign Up
+        div.main-title
+                div.name
+                    p Name
+                div.username
+                    p UserName
+                div.email
+                    p Email
+                div.phoneno
+                    p PhoneNo
+                div.date
+                    p Registered On
+        block content
+                each user,i in users
+                    div.user-box
+                        div.myname
+                            p #{user.name}
+                        div.myusername
+                            p #{user.username}
+                        div.myemail
+                            p #{user.email}
+                        div.myphoneno
+                            p #{user.phoneno}
+                        div.mydate
+                            p #{user.registered}
+        div.footer
+            div.social-networks
+                div.desc 
+                    p Connect with us via...
+                div.facebook
+                    a(href='#route1')
+                        img(src='/images/facebook.png' height='30' width='30')
+                div.instagram
+                    a(href='#route2')
+                        img(src='/images/instagram.png' height='30' width='30')
+                div.linkedin
+                    a(href='#route3')
+                        img(src='/images/linkedin.png' height='30' width='30')
+                div.twitter
+                    a(href='#route4')
+                        img(src='/images/twitter.png' height='30' width='30')
+            
+            div.footer-content
+                div.web-tag
+                    p Additional Links
+                    div.privacy-policy
+                        a(href='/privacy-policy') Privacy Policy
+                    div.term-condns
+                        a(href='/terms-and-condns') Terms and Conditions
+                    div.about-us
+                        a(href='/about-us') About Us
+                div.contact-us
+                    p Contact Us
+                    br
+                    div.details
+                        p Mail:taskBoxOfficial@gmail.com
+                        br
+                        p Phone:+1 7218348478,7384189889
+                        br
+                        p Address Parkinsons Avenue, NewYork,US
+        

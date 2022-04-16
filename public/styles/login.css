@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: inline-flex;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+    max-width: 100%;
+}
+.title{
+    flex: 10;
+}
+.log-in,.sign-up{
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+.title p{
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 1%;
+    top: 20%;
+}
+.log-in{
+    background-color: white;
+    text-align:center;
+    vertical-align: middle;
+    height: 30px;
+}
+.log-in:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.log-in:hover a{
+    color: white;
+}
+.sign-up{
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    height: 30px;
+}
+.sign-up:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.sign-up:hover a{
+    color: white;
+}
+.log-in a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.sign-up a{
+    font-family: monospace;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 12%;
+}
+.login-title{
+    background-color: black;
+    height: 60px;
+    position: relative;
+    left: 25%;
+    margin-top: 5%;
+    width: 40%;
+    max-width: 40%;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+.login-title p{
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    position: relative;
+    top: 25%;
+}
+.form{
+    background-image: linear-gradient(to right,#6600ff,#9900ff,#cc00ff);
+    position: relative;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 40%;
+    height: 300px;
+    border-radius: 0px 0px 15px 15px;
+}
+.user-name{
+    flex: 1;
+    position: relative;
+    left: 35%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.user-name input{
+     height: 22px;
+     width:250px;
+}
+.user-name label{
+    color: white;
+    margin-bottom: 5px;
+    font-family: monospace;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px 0px 0px 3px;
+    background-color:black;
+}
+.password{
+    flex: 1;
+    position: relative;
+    left: 35%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.password input{
+     height: 22px;
+     width: 250px;
+}
+.password label{
+    color: white;
+    margin-bottom: 5px;
+    font-family: monospace;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px 0px 0px 3px;
+    background-color:black;
+}
+.login{
+    flex: 0.5;
+    position: relative;
+    left: 35%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.login button{
+    height: 30px;
+    width: 120px;     
+    border-radius: 15px;
+}
+.social-networks{
+    display: inline-flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer{
+    margin-top: 100px;
+}
+.desc{
+    flex: 32;
+    color: white;
+    font-size: 18px;
+    font-family: monospace
+}
+.desc p{
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+.facebook{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.facebook img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.instagram{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.instagram img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.linkedin{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.linkedin img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.twitter{
+    border: 1px solid black;
+    height: 40px;
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.twitter img{
+    position: relative;
+    left: 12.5%;
+    top: 12.5%;
+}
+.footer-content{
+    display: inline-flex;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.web-tag{
+    flex: 1.5;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.web-tag p{
+    color: deeppink;
+}
+.contact-us{
+    flex: 1;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 18px;
+}
+.privacy-policy{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.term-condns{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-us{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.privacy-policy a{
+    text-decoration: none;
+    color: black;
+}
+.term-condns a{
+    text-decoration: none;
+    color: black;
+}
+.about-us a{
+    text-decoration: none;
+    color: black;
+}
